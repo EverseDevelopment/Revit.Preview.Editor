@@ -6,15 +6,15 @@ using Newtonsoft.Json;
 
 namespace EditRevitFile
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             GetInfoJson(this);
         }
 
-        public static void GetInfoJson(Form1 form)
+        public static void GetInfoJson(MainForm form)
         {
             string fullFilePath = GetInfo.TempFile();
 
